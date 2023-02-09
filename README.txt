@@ -16,15 +16,15 @@ File Structure:
 ├── html
 │   ├── index.html
 │   └── pages
-│       ├── details.html
-│       ├── details2.html
-│       ├── details3.html
-│       ├── details4.html
-│       ├── details5.html
-│       ├── details6.html
-│       ├── page2.html
-│       ├── page3.html
-│       └── page4.html
+│       ├── sareedetails.html
+│       ├── dressdetails.html
+│       ├── necklacedetails.html
+│       ├── keyringdetails.html
+│       ├── pearlnecklacedetails.html
+│       ├── braceletdetails.html
+│       ├── products.html
+│       ├── appointment.html
+│       └── contact&collab.html
 └── assets
     ├── Music&Video
     └── image
@@ -52,10 +52,10 @@ Code Details:
         - A navigation bar with links to the various pages of the website.
         - A main image displayed in the center of the page. “<center>” tag was used for this purpose. 
 
-    B. pages/page2.html:
+    B. pages/products.html:
         - The website displays a collection of products including dresses, wooden jewellery, stone jewellery, and a stone bracelet making video. The website also has an audio clip that can be played while shopping. The audio[3] and videos[4] used on this page are taken from the internet but I hosted everything in the local directory. 
 
-    C. pages/page3.html:
+    C. pages/appointment.html:
 
         - The p tag is used to display five images of Mehendi designs.
 
@@ -64,26 +64,26 @@ Code Details:
         - The iframe tag is used to embed a YouTube video[1] that provides a tutorial for beginners.
 
 
-    D. pages/page4.html:
+    D. pages/contact&collab.html:
 
         - A paragraph explaining the purpose and history of the business.
         - A section for contact information, including an email link, and instructions on what to include in the email.
         - An embedded YouTube video[2] about the importance of collaboration.
 
-    F. pages/details.html:
+    F. pages/sareedetails.html:
         - Product details section with an ordered list "ol" displaying the color and fabric of the product and a price section with an unordered list "ul" showing the price in two different currencies.
 
-    G. pages/details2.html:
-        - I have created a new page with content that is similar to a previous page(pages/details.html). This is just a new page with a new product but all the structure is the same as the previous page. Only product(item) names and price are different. 
+    G. pages/dressdetails.html:
+        - I have created a new page with content that is similar to a previous page(pages/sareedetails.html). This is just a new page with a new product but all the structure is the same as the previous page. Only product(item) names and price are different. 
 
-    H. pages/details3.html:
-        - I have created a new page with content that is similar to a previous page(pages/details.html). This is just a new page with a new product but all the structure is the same as the previous page. Only product(item) names and price are different. 
-    I. pages/details4.html:
-        - I have created a new page with content that is similar to a previous page(pages/details.html). This is just a new page with a new product but all the structure is the same as the previous page. Only product(item) names and price are different. 
-    J. pages/details5.html:
-        - I have created a new page with content that is similar to a previous page(pages/details.html). This is just a new page with a new product but all the structure is the same as the previous page. Only product(item) names and price are different. 
-    K. pages/details6.html:
-        - I have created a new page with content that is similar to a previous page(pages/details.html). This is just a new page with a new product but all the structure is the same as the previous page. Only product(item) names and price are different. 
+    H. pages/necklacedetails.html:
+        - I have created a new page with content that is similar to a previous page(pages/sareedetails.html). This is just a new page with a new product but all the structure is the same as the previous page. Only product(item) names and price are different. 
+    I. pages/keyringdetails.html:
+        - I have created a new page with content that is similar to a previous page(pages/sareedetails.html). This is just a new page with a new product but all the structure is the same as the previous page. Only product(item) names and price are different. 
+    J. pages/pearlnecklacedetails.html:
+        - I have created a new page with content that is similar to a previous page(pages/sareedetails.html). This is just a new page with a new product but all the structure is the same as the previous page. Only product(item) names and price are different. 
+    K. pages/braceletdetails.html:
+        - I have created a new page with content that is similar to a previous page(pages/sareedetails.html). This is just a new page with a new product but all the structure is the same as the previous page. Only product(item) names and price are different. 
 
 
 References:
