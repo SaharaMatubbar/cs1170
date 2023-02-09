@@ -2,7 +2,7 @@
 Personal Business (Ronger Shopnoghor)
 
 
-Code Link: https://github.com/SaharaMatubbar/1170 [will upload at the end of the coding]
+Code Link: https://github.com/SaharaMatubbar/cs1170 [will upload at the end of the coding]
 Live View: https://cs1170.vercel.app
 
 
