@@ -98,6 +98,3 @@ References:
 Contact:
 
 - If you have any questions or concerns, please feel free to reach out to me at sh320914@dal.ca
-
-r.txt
-Displaying r.txt.
