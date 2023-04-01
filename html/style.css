@@ -1,0 +1,1636 @@
+/* Name: Sahara Matubbar */
+/* ID: sh320914 */
+
+/*universal selector*/
+* {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* Add a background color */
+body {
+  background-color: #ffffff;
+}
+
+.centered-item {
+  margin: 0 auto;
+  /* This will center the div horizontally */
+  text-align: center;
+  /* This will center the contents of the div */
+}
+
+/* This time accessing by id*/
+#rounded-div {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #e0b3d6;
+  height: auto;
+  width: auto;
+  padding: 15px;
+}
+
+.rounded-div {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #e0b3d6;
+  height: auto;
+  width: auto;
+  padding: 15px;
+}
+
+a {
+  display: inline-block;
+}
+
+/* Style the main heading */
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+  font-family: serif;
+  color: #0f0e0e;
+  text-shadow: 2px 2px 5px rgb(227, 140, 207);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Style the small headings */
+h2 {
+  font-size: 30px;
+  font-family: serif;
+  color: #181717;
+  text-shadow: 1px 1px #f2f2f2;
+  padding-bottom: 20px;
+  filter: drop-shadow(1px 1px #df61db);
+}
+
+h4 {
+  font-size: 30px;
+  font-family: serif;
+  color: #181717;
+  text-shadow: 1px 1px #f2f2f2;
+  padding-bottom: 20px;
+}
+
+h6 {
+  font-size: 18px;
+  font-family: serif;
+  color: #181717;
+  text-shadow: 1px 1px #f2f2f2;
+  padding-bottom: 20px;
+}
+
+caption {
+  font-size: 18px;
+  font-family: serif;
+  color: #181717;
+  text-shadow: 1px 1px #f2f2f2;
+  padding-bottom: 20px;
+}
+
+
+/* Splash screen styles */
+
+#splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  /* Add a blur effect to the background */
+}
+
+.splash-content {
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.splash-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+#close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* Style the social media icons */
+a img {
+  margin-right: 10px;
+  filter: drop-shadow(1px 1px #df7eb3);
+  border-radius: 10px;
+}
+
+/* Mode color button  */
+.mode-buttons-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  background-color: #f5f5f5;
+  padding: 5px;
+  width: 150px;
+  border-radius: 20px;
+}
+
+.mode-button {
+  font-size: 1rem;
+  padding: 5px 10px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  color: #fff;
+  transition: background-color 0.2s ease-in-out;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+  outline: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mode-button:first-of-type {
+  margin-left: 0;
+  border-radius: 25px 0 0 25px;
+}
+
+.mode-button:last-of-type {
+  margin-right: 0;
+  border-radius: 0 25px 25px 0;
+}
+
+.light-mode {
+  background-color: #beb7e9;
+}
+
+.dark-mode {
+  background-color: #1f2e3e;
+}
+
+.high-contrast-mode {
+  background-color: #FFFBAC;
+}
+
+.mode-button:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mode-button:focus {
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5), 0 0 0 8px var(--color);
+}
+
+
+/* end color  */
+
+/* Style the navigation links */
+
+nav {
+  background: linear-gradient(to right, #df9fd3, #dddddd, #dddddd, #df9fd3);
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+nav a {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2b2929;
+  text-decoration: none;
+  margin-right: 10px;
+  text-shadow: 1px 1px #f2f2f2;
+}
+
+/* Pseudo-element selector */
+nav a:hover {
+  color: #9950e2;
+  text-decoration: underline;
+}
+
+/* Default styles for desktop */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Notification */
+
+.icon-container {
+  position: relative;
+  display: inline-block;
+}
+
+.notification-count {
+  position: absolute;
+  top: -0.5em;
+  right: -0.5em;
+  display: inline-block;
+  min-width: 1.5em;
+  padding: 0.2em;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #f00;
+  border-radius: 50%;
+  text-align: center;
+  animation: shake 0.8s ease-in-out infinite;
+}
+
+a {
+  position: relative;
+  display: inline-block;
+}
+
+a img {
+  display: block;
+  max-width: 100%;
+}
+
+a .notification-count {
+  top: -0.8em;
+  right: -0.8em;
+}
+
+.notification-count {
+  position: absolute;
+  top: -0.5em;
+  right: -0.5em;
+  display: inline-block;
+  min-width: 1.5em;
+  padding: 0.2em;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #f00;
+  border-radius: 50%;
+  text-align: center;
+  animation: shake 0.8s ease-in-out infinite;
+}
+
+.notification-count:hover {
+  box-shadow: 1px 1px 3px 3px rgb(114, 43, 101);
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  20% {
+    transform: translateX(-0.2em) rotate(-5deg);
+  }
+
+  40% {
+    transform: translateX(0.2em) rotate(5deg);
+  }
+
+  60% {
+    transform: translateX(-0.2em) rotate(-5deg);
+  }
+
+  80% {
+    transform: translateX(0.2em) rotate(5deg);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Button for "like" action */
+#likeButton {
+  background-color: #e982db;
+  margin-right: 10px;
+  filter: drop-shadow(1px 1px #df7eb3);
+  border-radius: 10px;
+  color: white;
+  /* White text color */
+  border: none;
+  /* Remove border */
+  padding: 10px 20px;
+  /* Add padding */
+  text-align: center;
+  /* Center text */
+  text-decoration: none;
+  /* Remove underline */
+  display: inline-block;
+  /* Display as inline-block */
+  font-size: 16px;
+  /* Set font size */
+  cursor: pointer;
+  /* Add cursor on hover */
+  border-radius: 5px;
+  /* Add rounded corners */
+}
+
+#likeButton:hover {
+  box-shadow: 1px 1px 3px 3px rgb(114, 43, 101);
+}
+
+/* Modal Section */
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.modal-backdrop.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#close-modal {
+  background-color: #f44336;
+  /* Red background color */
+  color: white;
+  /* White text color */
+  border: none;
+  /* Remove button border */
+  padding: 10px 20px;
+  /* Add padding to button */
+  border-radius: 5px;
+  /* Rounded corners */
+  font-size: 16px;
+  /* Increase font size */
+  cursor: pointer;
+  /* Change cursor to pointer on hover */
+}
+
+#close-modal:hover {
+  background-color: #ff6659;
+  /* Darker red background color on hover */
+}
+
+/* END */
+
+/* Style the main image */
+img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  /* Added max-width to prevent image overflow */
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+/* Pseudo-element selector */
+img:hover {
+  box-shadow: 2px 2px 5px 5px rgb(227, 140, 207);
+}
+
+/* Pseudo-element selector */
+.video:hover {
+  box-shadow: 2px 2px 5px 5px rgb(227, 140, 207);
+}
+
+.audio {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Pseudo-element selector */
+.audio:hover {
+  box-shadow: 2px 2px 5px 5px rgb(227, 140, 207);
+}
+
+/* Pseudo-element selector */
+.youtubevideo:hover {
+  box-shadow: 2px 2px 5px 5px rgb(227, 140, 207);
+}
+
+/* attribute selector */
+a[title] {
+  background-color: rgb(181, 156, 183);
+}
+
+/* Product Details */
+
+/* product flex */
+.imageandproduct {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Set the image and text boxes to take up 50% of the container width on desktop screens */
+.image-box,
+.text-box {
+  flex-basis: 50%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.image-box {
+  /* height: 300px; */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Set the text box to have some content */
+.text-box {
+  text-align: left;
+  margin-top: 5px;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 767px) {
+
+  /* Set the image and text boxes to take up 100% of the container width on mobile screens */
+  .image-box,
+  .text-box {
+    flex-basis: 100%;
+  }
+}
+
+.products-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.product-list a img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.product-details {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  border: 2px solid rgb(237, 100, 219);
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.product-details h2 {
+  margin-bottom: 10px;
+}
+
+.details-list {
+  list-style-type: none;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.details-list li {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #9a20a5;
+}
+
+.price-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.price-list li {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.price-list li:before {
+  content: "• ";
+  color: #9a20a5;
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+/* End Product Details */
+
+/* Image side by side in Appointment page */
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: calc(25% - 20px);
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  .image-container img {
+    width: calc(50% - 20px);
+  }
+}
+
+/* end */
+
+/* Table */
+
+.table-container {
+  margin: 50px auto;
+  width: 80%;
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f5def3;
+}
+
+th {
+  text-align: center;
+  background-color: #db3cb1;
+  color: white;
+  padding: 10px;
+  border: 0px solid;
+}
+
+td {
+  padding: 10px;
+  border: 0px solid;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Multiple Selector */
+caption,
+h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* END */
+
+/* Form Design */
+
+/* Style the form container */
+.form-container {
+  background-color: #eadeed;
+  border-radius: 5px;
+  padding: 20px;
+  width: 500px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the form inputs */
+.form-input {
+  display: block;
+  width: 90%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ffffff;
+  font-size: 16px;
+}
+
+/* Style the form label */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Style the form button */
+.form-button {
+  background-color: #c035ab;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Style the form button on hover */
+.form-button:hover {
+  box-shadow: 2px 2px 5px 5px rgb(227, 140, 207);
+}
+
+/* Style the form error message */
+.form-error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* End */
+
+/* FOOTER */
+/* Style the footer */
+footer {
+  background: linear-gradient(to right, #ca6db1, #ca6db1);
+  color: #f7f5f5;
+  padding: 50px 0;
+  border-radius: 10px;
+}
+
+/* Style the footer container */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* Added flex-wrap to prevent footer sections from overflowing */
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Style the footer sections */
+.footer-section {
+  flex: 1;
+  margin-right: 50px;
+  margin-bottom: 30px;
+  /* Added margin-bottom to create space between footer sections */
+  max-width: 350px;
+  /* Added max-width to prevent footer sections from overflowing */
+}
+
+/* Child Selector */
+div>h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-section p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: #444444;
+  text-decoration: none;
+}
+
+/* Pseudo-element selector */
+.footer-section a:hover {
+  color: #ffffff;
+}
+
+/* Style the footer bottom */
+.footer-bottom {
+  background-color: #e2b1cf;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Image slide */
+
+.carousel-container {
+  width: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 2000px;
+  animation: slide 10s infinite;
+}
+
+.carousel-slide img {
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+}
+
+/* Media query for desktop and tablet screens */
+@media (max-width: 991px) {
+  .carousel-container {
+    width: 50%;
+  }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 576px) {
+  .carousel-container {
+    width: 300px;
+  }
+}
+
+/* It is showing the sliding motion of the carousel images
+ with a series of transform property values that move the images horizontally */
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  20% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-500px);
+  }
+
+  45% {
+    transform: translateX(-500px);
+  }
+
+  50% {
+    transform: translateX(-1000px);
+  }
+
+  70% {
+    transform: translateX(-1000px);
+  }
+
+  75% {
+    transform: translateX(-1500px);
+  }
+
+  95% {
+    transform: translateX(-1500px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* end */
+/* General Sibling selector */
+div~p {
+  font-size: 20px;
+}
+
+/* When you select or mark something it will be red color and yellow background color. */
+::selection {
+  color: red;
+  background: yellow;
+}
+
+/* Media queries */
+/* Responsive styles */
+
+@media only screen and (max-width: 768px) {
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin-right: 0;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .footer-section:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/**********************************************************************
+/**********************************************************************
+/* Dark Mode */
+
+/* Add DARK background color */
+body.dark-mode {
+  background-color: black;
+}
+
+/* This time accessing by id */
+body.dark-mode #rounded-div {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #88c3a1;
+  height: auto;
+  width: auto;
+  padding: 15px;
+}
+
+body.dark-mode .rounded-div {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #88c3a1;
+  height: auto;
+  width: auto;
+  padding: 15px;
+}
+
+body.dark-mode a img {
+  margin-right: 10px;
+  filter: drop-shadow(1px 1px #608560);
+  border-radius: 10px;
+}
+
+/* Style the main heading */
+body.dark-mode h1 {
+  font-size: 60px;
+  font-weight: bold;
+  font-family: serif;
+  color: #f2f2f2;
+  text-shadow: 2px 2px 5px rgb(169, 230, 220);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Style the small headings */
+body.dark-mode h2 {
+  font-size: 30px;
+  font-family: serif;
+  color: #f1f1f1;
+  text-shadow: 1px 1px rgb(169, 230, 220);
+  padding-bottom: 20px;
+  filter: drop-shadow(1px 1px rgb(169, 230, 220));
+}
+
+body.dark-mode h4 {
+  font-size: 30px;
+  font-family: serif;
+  color: #f3f3f3;
+  text-shadow: 1px 1px #f2f2f2;
+  padding-bottom: 20px;
+}
+
+body.dark-mode h6 {
+  font-size: 18px;
+  font-family: serif;
+  color: #f3f3f3;
+  text-shadow: 1px 1px #f2f2f2;
+  padding-bottom: 20px;
+}
+
+body.dark-mode caption {
+  font-size: 18px;
+  font-family: serif;
+  color: #f3f3f3;
+  text-shadow: 1px 1px #f2f2f2;
+  padding-bottom: 20px;
+}
+
+body.dark-mode nav {
+  background: linear-gradient(to right, #BBD6B8, #dddddd, #dddddd, #BBD6B8);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+body.dark-mode nav a {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2b2929;
+  text-decoration: none;
+  margin-right: 10px;
+  text-shadow: 1px 1px #f2f2f2;
+}
+
+/* Pseudo-element selector */
+body.dark-mode nav a:hover {
+  color: #bd3e55;
+  text-decoration: underline;
+}
+
+/* Default styles for desktop */
+body.dark-mode a {
+  text-decoration: none;
+  color: white;
+}
+
+
+body.dark-mode img:hover {
+  box-shadow: 2px 2px 5px 5px rgb(140, 227, 227);
+}
+
+body.dark-mode video:hover {
+  box-shadow: 2px 2px 5px 5px rgb(140, 227, 227);
+}
+
+body.dark-mode audio:hover {
+  box-shadow: 2px 2px 5px 5px rgb(140, 227, 227);
+}
+
+body.dark-mode .youtubevideo:hover {
+  box-shadow: 2px 2px 5px 5px rgb(140, 227, 227);
+}
+
+body.dark-mode #likeButton {
+  background-color: #5fb89c;
+  /* Green background color */
+  color: white;
+  /* White text color */
+  border: none;
+  /* Remove border */
+  padding: 10px 20px;
+  /* Add padding */
+  text-align: center;
+  /* Center text */
+  text-decoration: none;
+  /* Remove underline */
+  display: inline-block;
+  /* Display as inline-block */
+  font-size: 16px;
+  /* Set font size */
+  cursor: pointer;
+  /* Add cursor on hover */
+  border-radius: 5px;
+  /* Add rounded corners */
+}
+
+body.dark-mode #likeButton:hover {
+  box-shadow: 1px 1px 3px 3px rgb(140, 227, 227);
+}
+
+/* Image Container */
+
+body.dark-mode .image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+body.dark-mode .image-container img {
+  width: calc(25% - 20px);
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  body.dark-mode .image-container img {
+    width: calc(50% - 20px);
+  }
+}
+
+/* Modal Section */
+
+body.dark-mode .modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+body.dark-mode .modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+body.dark-mode .modal-content {
+  padding: 20px;
+}
+
+body.dark-mode .modal-backdrop.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+body.dark-mode .dark {
+  color: black;
+}
+
+body.dark-mode .modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+body.dark-mode #close-modal {
+  background-color: #f44336;
+  /* Red background color */
+  color: white;
+  /* White text color */
+  border: none;
+  /* Remove button border */
+  padding: 10px 20px;
+  /* Add padding to button */
+  border-radius: 5px;
+  /* Rounded corners */
+  font-size: 16px;
+  /* Increase font size */
+  cursor: pointer;
+  /* Change cursor to pointer on hover */
+}
+
+body.dark-mode #close-modal:hover {
+  background-color: #ff6659;
+  /* Darker red background color on hover */
+}
+
+body.dark-mode img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  /* Added max-width to prevent image overflow */
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #fbfbfb;
+}
+
+/* attribute selector */
+body.dark-mode a[title] {
+  background-color: rgb(156, 183, 168);
+  color: black;
+}
+
+body.dark-mode .product-details {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #3c2a21;
+  border-radius: 15px;
+  border: 2px solid rgb(156, 183, 168);
+  border-radius: 8px;
+  padding: 5px;
+}
+
+body.dark-mode .details-list li {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #e5e5cb;
+}
+
+body.dark-mode .price-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+body.dark-mode .price-list li {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+body.dark-mode .price-list li:before {
+  content: "• ";
+  color: #e5e5cb;
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+body.dark-mode table {
+  border-collapse: collapse;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+body.dark-mode th {
+  text-align: center;
+  background-color: #70c094;
+  color: white;
+  padding: 10px;
+  border: 0px solid;
+}
+
+body.dark-mode tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+body.dark-mode .form-container {
+  background-color: #679c80;
+  border-radius: 5px;
+  padding: 20px;
+  width: 500px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+
+body.dark-mode .form-input {
+  display: block;
+  width: 90%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #e6e6e6;
+  font-size: 16px;
+}
+
+/* Style the form button */
+body.dark-mode .form-button {
+  background-color: #1d1e1d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Style the form button on hover */
+body.dark-mode .form-button:hover {
+  box-shadow: 1px 1px 3px 3px rgb(140, 227, 227);
+}
+
+/* Style the form error message */
+body.dark-mode .form-error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+body.dark-mode footer {
+  background: linear-gradient(to right, #BBD6B8, #BBD6B8);
+  color: #002B5B;
+  padding: 50px 0;
+  border-radius: 10px;
+}
+
+body.dark-mode .footer-section a {
+  color: #444444;
+  text-decoration: none;
+}
+
+body.dark-mode .footer-section a:hover {
+  color: #ffffff;
+}
+
+body.dark-mode .footer-bottom {
+  background-color: #628e90;
+  padding: 20px 0;
+  text-align: center;
+}
+
+body.dark-mode .carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #555;
+  margin: 0 5px;
+}
+
+body.dark-mode .carousel-dot.active {
+  background-color: #555;
+}
+
+/**********************************************************************
+/**********************************************************************
+/* Contrast Mode */
+
+/* Add DARK background color */
+body.contrast-mode {
+  background-color: #f0eb8d;
+}
+
+/* This time accessing by id*/
+body.contrast-mode #rounded-div {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: rgb(159, 207, 211);
+  height: auto;
+  width: auto;
+  padding: 15px;
+}
+
+body.contrast-mode .rounded-div {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: rgb(159, 207, 211);
+  height: auto;
+  width: auto;
+  padding: 15px;
+}
+
+body.contrast-mode a img {
+  margin-right: 10px;
+  filter: drop-shadow(1px 1px #5286d3);
+  border-radius: 10px;
+}
+
+/* Style the main heading */
+body.contrast-mode h1 {
+  font-size: 60px;
+  font-weight: bold;
+  font-family: serif;
+  color: black;
+  text-shadow: 2px 2px 5px rgb(140, 182, 227);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Style the small headings */
+body.contrast-mode h2 {
+  font-size: 30px;
+  font-family: serif;
+  color: black;
+  text-shadow: 1px 1px rgb(140, 182, 227);
+  padding-bottom: 20px;
+  filter: drop-shadow(1px 1px rgb(140, 182, 227));
+}
+
+body.contrast-mode h4 {
+  font-size: 30px;
+  font-family: serif;
+  color: black;
+  text-shadow: 1px 1px #f2f2f2;
+  padding-bottom: 20px;
+}
+
+body.contrast-mode h6 {
+  font-size: 18px;
+  font-family: serif;
+  color: black;
+  text-shadow: 1px 1px #f2f2f2;
+  padding-bottom: 20px;
+}
+
+body.contrast-mode caption {
+  font-size: 18px;
+  font-family: serif;
+  color: black;
+  text-shadow: 1px 1px #f2f2f2;
+  padding-bottom: 20px;
+}
+
+body.contrast-mode nav {
+  background: linear-gradient(to right, #599ce8, #dddddd, #dddddd, #599ce8);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+body.contrast-mode nav a {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2b2929;
+  text-decoration: none;
+  margin-right: 10px;
+  text-shadow: 1px 1px #f2f2f2;
+}
+
+/* Pseudo-element selector */
+body.contrast-mode nav a:hover {
+  color: #8f5118;
+  text-decoration: underline;
+}
+
+/* Default styles for desktop */
+body.contrast-mode a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body.contrast-mode img:hover {
+  box-shadow: 2px 2px 5px 5px rgb(95, 88, 222);
+}
+
+body.contrast-mode video:hover {
+  box-shadow: 2px 2px 5px 5px rgb(95, 88, 222);
+}
+
+body.contrast-mode audio:hover {
+  box-shadow: 2px 2px 5px 5px rgb(95, 88, 222);
+}
+
+body.contrast-mode .youtubevideo:hover {
+  box-shadow: 2px 2px 5px 5px rgb(95, 88, 222);
+}
+
+body.contrast-mode #likeButton {
+  background-color: #1654c1;
+  /* Green background color */
+  color: white;
+  /* White text color */
+  border: none;
+  /* Remove border */
+  padding: 10px 20px;
+  /* Add padding */
+  text-align: center;
+  /* Center text */
+  text-decoration: none;
+  /* Remove underline */
+  display: inline-block;
+  /* Display as inline-block */
+  font-size: 16px;
+  /* Set font size */
+  cursor: pointer;
+  /* Add cursor on hover */
+  border-radius: 5px;
+  /* Add rounded corners */
+}
+
+body.contrast-mode #likeButton:hover {
+  box-shadow: 1px 1px 3px 3px rgb(95, 88, 222);
+}
+
+/* Image Container */
+
+body.contrast-mode .image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+body.contrast-mode .image-container img {
+  width: calc(25% - 20px);
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  body.contrast-mode .image-container img {
+    width: calc(50% - 20px);
+  }
+}
+
+/* Modal Section */
+
+body.contrast-mode .modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+body.contrast-mode .modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+body.contrast-mode .modal-content {
+  padding: 20px;
+}
+
+body.contrast-mode .modal-backdrop.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+body.contrast-mode .dark {
+  color: black;
+}
+
+body.contrast-mode .modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+body.contrast-mode #close-modal {
+  background-color: #f44336;
+  /* Red background color */
+  color: white;
+  /* White text color */
+  border: none;
+  /* Remove button border */
+  padding: 10px 20px;
+  /* Add padding to button */
+  border-radius: 5px;
+  /* Rounded corners */
+  font-size: 16px;
+  /* Increase font size */
+  cursor: pointer;
+  /* Change cursor to pointer on hover */
+}
+
+body.contrast-mode #close-modal:hover {
+  background-color: #ff6659;
+  /* Darker red background color on hover */
+}
+
+body.contrast-mode img {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  /* Added max-width to prevent image overflow */
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #1a120b;
+}
+
+/* attribute selector */
+body.contrast-mode a[title] {
+  background-color: rgb(143, 191, 231);
+}
+
+body.contrast-mode .product-details {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  border: 2px solid rgb(143, 191, 231);
+  border-radius: 8px;
+  padding: 5px;
+}
+
+body.contrast-mode .details-list li {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #38a0cc;
+}
+
+body.contrast-mode .price-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+body.contrast-mode .price-list li {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: rgb(0, 0, 0);
+}
+
+
+body.contrast-mode .price-list li:before {
+  content: "• ";
+  color: #38a0cc;
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+body.contrast-mode table {
+  border-collapse: collapse;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+body.contrast-mode th {
+  text-align: center;
+  background-color: #38a0cc;
+  color: white;
+  padding: 10px;
+  border: 0px solid;
+}
+
+body.contrast-mode tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+body.contrast-mode .form-container {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+  width: 500px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+body.contrast-mode .form-input {
+  display: block;
+  width: 90%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #e6e6e6;
+  font-size: 16px;
+}
+
+/* Style the form button */
+body.contrast-mode .form-button {
+  background-color: #0e1124;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Style the form button on hover */
+body.contrast-mode .form-button:hover {
+  box-shadow: 1px 1px 3px 3px rgb(140, 227, 227);
+}
+
+/* Style the form error message */
+body.contrast-mode .form-error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+body.contrast-mode footer {
+  background: linear-gradient(to right, #5990cf, #5990cf);
+  color: #f7f5f5;
+  padding: 50px 0;
+  border-radius: 10px;
+}
+
+body.contrast-mode .footer-section a {
+  color: #444444;
+  text-decoration: none;
+}
+
+body.contrast-mode .footer-section a:hover {
+  color: #ffffff;
+}
+
+body.contrast-mode .footer-bottom {
+  background-color: #1b3d71;
+  padding: 20px 0;
+  text-align: center;
+}

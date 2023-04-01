@@ -1,55 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title>Ronger Shopnoghor</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="../../assets/image/logo.jpg">
+  <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
+  <div class="mode-buttons-container">
+    <button class="mode-button light-mode" title="Light mode">
+      🤍
+    </button>
+    <button class="mode-button dark-mode" title="Dark mode">🌙</button>
+    <button class="mode-button high-contrast-mode" title="High contrast mode">
+      🌞
+    </button>
+  </div>
 
-  <center>
+  <!--It is the main heading with small heading and scocial media links-->
+  <h1 class="centered-item">Ronger Shopnoghor</h1>
+  <h6 class="centered-item">
+    Welcome to Ronger Shopnoghor<br>Enjoy your shopping with us ❤️
+  </h6>
+  <p class="centered-item">
+    <a href="https://www.facebook.com/artsbysahara" target="-blank"><img src="../../assets/image/facebook.png"
+        alt="fb icon" width="20" height="20" title="facebook"></a>
+    <a href="https://www.instagram.com/_ronger_shopnoghor_/" target="-blank"><img src="../../assets/image/instagram.png"
+        alt="ig icon" width="20" height="20" title="Instagram
+                  "></a>
+    <a href="#" id="open-modal"><img src="../../assets/image/notification.png" alt="Notification" width="20" height="20"
+        title="Notification
+                  ">
+      <span class="notification-count" id="notifyCount"></span></a>
+  </p>
 
-    <!--It is the main heading with small heading and scocial media links-->
-    <h1>Ronger Shopnoghor</h1>
-    <h6>Welcome to Ronger Shopnoghor<br>Enjoy your shopping with us ❤️ </h6>
-    <p>
-      <a href="https://www.facebook.com/artsbysahara" target="-blank"><img src="../../assets/image/facebook.png"
-          alt="fb icon" width="20" height="20" title="facebook"></a>
-      <a href="https://www.instagram.com/_ronger_shopnoghor_/" target="-blank"><img
-          src="../../assets/image/instagram.png" alt="ig icon" width="20" height="20" title="Instagram
-            "></a>
-    </p>
-    <!--This is the navigation bar of the website-->
-    <nav>
-      <a href="../index.html">Home</a> |
-      <a href="products.html">Products</a> |
-      <a href="appointment.html">Mehendi Appointmet</a> |
-      <a href="contact&collab.html">Contact & Collaboration</a>
+  <!--This is the navigation bar of the website-->
 
-    </nav>
+  <nav class="centered-item">
+    <a href="../index.html">Home</a>
+    |
+    <a href="product.html">Products</a>
+    |
+    <a href="appointment.html">Mehendi Appointmet</a>
+    |
+    <a href="contact&collab.html">Contact & Collaboration</a>
+  </nav>
 
-    <br>
-    <br>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h2 class="dark">Your Notification</h2>
+      <p id="allNotification"></p>
+      <button id="close-modal">Close Notification</button>
+    </div>
+  </div>
+  <div id="modal-backdrop" class="modal-backdrop"></div>
 
-    <body>
-      <!--5 images (taken by me)-->
-      <p>
-      <h3>Some of the work I have done before:</h3>
-      <img src="../../assets/image/mehendi 1.jpg" alt="mehendi picture" width="250" height="300">
-      <img src="../../assets/image/mehendi 2.jpg" alt="mehendi picture" width="250" height="300">
-      <img src="../../assets/image/mehendi 3.jpg" alt="mehendi picture" width="250" height="300">
-      <img src="../../assets/image/mehendi 4.jpg" alt="mehendi picture" width="250" height="300">
-      <img src="../../assets/image/mehendi 5.jpg" alt="mehendi picture" width="250" height="300">
-      </p>
+  <br>
+  <br>
 
-      <!--Here is 2 table-->
+  <!--5 images (taken by me)-->
+  <h2 class="centered-item">Some of the work I have done before</h2>
+  <div class="image-container">
+    <img src="../../assets/image/mehendi-1.jpg" alt="mehendi picture" width="250" height="300">
+    <img src="../../assets/image/mehendi-2.jpg" alt="mehendi picture" width="250" height="300">
+    <img src="../../assets/image/mehendi-3.jpg" alt="mehendi picture" width="250" height="300">
+    <img src="../../assets/image/mehendi-5.jpg" alt="mehendi picture" width="250" height="300">
+  </div>
 
+  <section class="centered-item">
+    <!--Here are 2 tables-->
+    <div class="table-container">
       <!--table 1-->
-      <h1>Book an appointment</h1>
-
-      <h3>You can E-mail or Call to book an appointment:</h3>
-      <table border="1">
+      <h2>Book an appointment</h2>
+      <table>
+        <caption>
+          You can E-mail or Call to book an appointment
+        </caption>
         <tr>
           <th>Name:</th>
           <td>Ronger Shopnoghor</td>
@@ -64,10 +93,11 @@
         </tr>
       </table>
 
-      <br>
       <!--table 2-->
-      <table border="2">
-        <caption>Availabality</caption>
+      <table>
+        <caption>
+          Availability
+        </caption>
         <tr>
           <th>Day</th>
           <th>Time</th>
@@ -81,21 +111,45 @@
           <td>9:00am-10:00pm</td>
         </tr>
       </table>
+    </div>
+  </section>
+  <br>
+  <br>
 
-      <br>
-      <br>
+  <!--Video from youtube-->
+  <section class="centered-item">
+    <h2>Tutorial for beginners</h2>
 
-      <!--Video from youtube-->
-      <p>
-        <b>Tutorial for beginners: </b>
-      </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/v6KgYiyXLcA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write;
+          encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="youtubevideo"></iframe>
+  </section>
 
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/v6KgYiyXLcA" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-          encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <br>
+  <br>
 
-  </center>
-
+  <footer>
+    <div class="footer-container centered-item">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>
+          We are Ronger Shopnoghor, a leading e-commerce platform for fashion
+          and lifestyle products.
+        </p>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>
+          3587 High Street<br>Halifax,NS,Canada<br>Phone: +1 (902)
+          412-5164<br>Email: info@rongershopnoghor.com
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Ronger Shopnoghor. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="../JS/main.js"></script>
+  <script src="../JS/color.js"></script>
 </body>
 
 </html>
